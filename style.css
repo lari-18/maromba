@@ -1,0 +1,116 @@
+:root {
+	--mtescuro: #070F2B;
+	--escuro: #1B1A55;
+	--mediano: #7067E6;
+	--medio: #535C91;
+	--claro: #c9cff2;
+
+}
+
+/* Ajustes gerais */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Georgia,  red serifs;
+	background: linear-gradient(#8B0000, #CD5C5C , white , #CD5C5C,#8B0000);
+}
+
+/* Cabeçalho e rodapé */
+header, footer {
+	width: 100%;
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+	background: #FA8072;
+}
+footer {
+	text-align: right;
+	padding-top: 100px;
+	color: white;
+}
+
+/* Barra de navegação */
+#navbar {
+	width: 100%;
+	overflow: hidden;
+	background: #8B0000;
+}
+#navbar ul {
+	list-style-type: none; /* Tira as bolinhas */
+	margin: 0;
+	padding: 0;
+}
+#navbar ul li {
+	float: left; /* Pra ficar um do lado do outro */
+}
+#navbar ul li a {
+	text-decoration: none; /*Tira formatação de link*/
+	padding: 15px 15px;
+	display: block;
+	color: white;
+}
+#navbar ul li a:hover {
+	color: #8B0000;
+	background: white;
+
+}
+
+/* Colunas laterais */
+.coluna {
+	width: 20%;
+	padding: 20px;
+	float: left;
+}
+
+.coluna a{
+	color: white;
+}
+
+.coluna a:visited {
+	color: black;
+}
+
+
+/* Coluna central */
+article {
+	width: 60%;
+	padding: 20px;
+	float: left;
+	background: #FFE4E1;
+}
+article p {
+	text-align: justify;
+}
+
+aside img {
+	width: 100%;
+}
+
+/*Responsivo*/
+
+/*Telas médias*/
+@media screen and (max-width: 800px) {
+	.coluna {
+		width: 30%;
+	}
+	article{
+		width: 70%;
+	}
+	aside.coluna {
+		width: 100%;
+	}
+}
+
+/*Telas pequenas*/
+@media screen and (max-width: 600px) {
+	.coluna {
+		width: 100%;
+	}
+	article{
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
